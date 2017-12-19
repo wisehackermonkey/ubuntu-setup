@@ -269,9 +269,9 @@ echo "NAME [FINISHED]"
 # Install java
 # http://tipsonubuntu.com/2016/07/31/install-oracle-java-8-9-ubuntu-16-04-linux-mint-18/
 echo "java [INSTALLING]"
-sudo add-apt-repository ppa:webupd8team/java
-sudo apt update
-# sudo apt install oracle-java9-installer
+# sudo add-apt-repository ppa:webupd8team/java
+# sudo apt update
+# sudo apt install oracle-java9-installer -y
 # javac -version
 # sudo apt install oracle-java9-set-default
 
