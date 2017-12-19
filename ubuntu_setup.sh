@@ -180,83 +180,99 @@ echo "Arduino [FINISHED]"
 # Install Git
 # https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-14-04
 echo "Git [INSTALLING]"
-# sudo apt-get install git git-gui || { echo 'Git [INSTALLING] failed' ; exit 1; }
-# sudo git config --global user.name "wisehackermonkey"
-# sudo git config --global user.email "oranbusiness@gmail.com"
-echo "git [SETUP]"
-# git config --list
-echo "Git [FINISHED]"
+# # sudo apt-get install git git-gui || { echo 'Git [INSTALLING] failed' ; exit 1; }
+# # sudo git config --global user.name "wisehackermonkey"
+# # sudo git config --global user.email "oranbusiness@gmail.com"
+# echo "git [SETUP]"
+# # git config --list
+# echo "Git [FINISHED]"
 
 
 
 
 
-# Install IntelliJ
-# https://stackoverflow.com/questions/30130934/how-to-install-intellij-idea-on-ubuntu/30131216#30131216
-echo "IntelliJ [INSTALLING]"
-# wget https://download-cf.jetbrains.com/idea/ideaIU-2017.3.1-no-jdk.tar.gz
-# sudo tar -xvf intellij*.tar.gz -C /opt/
-# echo "Installing IntelliJ IDEA..."
+# # Install IntelliJ
+# # https://stackoverflow.com/questions/30130934/how-to-install-intellij-idea-on-ubuntu/30131216#30131216
+# echo "IntelliJ [INSTALLING]"
+# # wget https://download-cf.jetbrains.com/idea/ideaIU-2017.3.1-no-jdk.tar.gz
+# # sudo tar -xvf intellij*.tar.gz -C /opt/
+# # echo "Installing IntelliJ IDEA..."
 
-# Attempt to install a JDK
-# apt-get install openjdk-8-jdk
-# add-apt-repository ppa:webupd8team/java && apt-get update && apt-get install oracle-java8-installer
+# # Attempt to install a JDK
+# # apt-get install openjdk-8-jdk
+# # add-apt-repository ppa:webupd8team/java && apt-get update && apt-get install oracle-java8-installer
 
-# Prompt for edition
-#while true; do
-#    read -p "Enter 'U' for Ultimate or 'C' for Community: " ed 
-#    case $ed in
-#        [Uu]* ) ed=U; break;;
-#        [Cc]* ) ed=C; break;;
-#    esac
-#done
-ed=C
-# Fetch the most recent version
-VERSION=$(sudo wget "https://www.jetbrains.com/intellij-repository/releases" -qO- | sudo grep -P -o -m 1 "(?<=https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/BUILD/)[^/]+(?=/)")
-# Prepend base URL for download
-URL="https://download.jetbrains.com/idea/ideaI$ed-$VERSION.tar.gz"
-echo $URL
-# Truncate filename
-FILE=$(basename ${URL})
-# Set download directory
-DEST=~/Downloads/$FILE
-echo "Downloading idea-I$ed-$VERSION to $DEST..."
-# Download binary
-sudo wget -cO ${DEST} ${URL} --read-timeout=5 --tries=0
-echo "Download complete!"
-# Set directory name
-DIR="/opt/idea-I$ed-$VERSION"
-echo "Installing to $DIR"
-# # Untar file
-if mkdir ${DIR}; then
-    sudo tar -xzf ${DEST} -C ${DIR} --strip-components=1
-fi
-# Grab executable folder
-BIN="$DIR/bin"
-# Add permissions to install directory
-sudo chmod -R +rwx ${DIR}
-# Set desktop shortcut path
-DESK=/usr/share/applications/IDEA.desktop
+# # Prompt for edition
+# #while true; do
+# #    read -p "Enter 'U' for Ultimate or 'C' for Community: " ed 
+# #    case $ed in
+# #        [Uu]* ) ed=U; break;;
+# #        [Cc]* ) ed=C; break;;
+# #    esac
+# #done
+# ed=C
+# # Fetch the most recent version
+# VERSION=$(sudo wget "https://www.jetbrains.com/intellij-repository/releases" -qO- | sudo grep -P -o -m 1 "(?<=https://www.jetbrains.com/intellij-repository/releases/com/jetbrains/intellij/idea/BUILD/)[^/]+(?=/)")
+# # Prepend base URL for download
+# URL="https://download.jetbrains.com/idea/ideaI$ed-$VERSION.tar.gz"
+# echo $URL
+# # Truncate filename
+# FILE=$(basename ${URL})
+# # Set download directory
+# DEST=~/Downloads/$FILE
+# echo "Downloading idea-I$ed-$VERSION to $DEST..."
+# # Download binary
+# sudo wget -cO ${DEST} ${URL} --read-timeout=5 --tries=0
+# echo "Download complete!"
+# # Set directory name
+# DIR="/opt/idea-I$ed-$VERSION"
+# echo "Installing to $DIR"
+# # # Untar file
+# if mkdir ${DIR}; then
+#     sudo tar -xzf ${DEST} -C ${DIR} --strip-components=1
+# fi
+# # Grab executable folder
+# BIN="$DIR/bin"
+# # Add permissions to install directory
+# sudo chmod -R +rwx ${DIR}
+# # Set desktop shortcut path
+# DESK=/usr/share/applications/IDEA.desktop
 
-# Add desktop shortcut
-sudo printf "[Desktop Entry]\nEncoding=UTF-8\nName=IntelliJ IDEA\nComment=IntelliJ IDEA\nExec=${BIN}/idea.sh\nIcon=${BIN}/idea.png\nTerminal=false\nStartupNotify=true\nType=Application" > ${DESK}
-# Create symlink entry
-sudo ln -s ${BIN}/idea.sh /usr/local/bin/idea
+# # Add desktop shortcut
+# sudo printf "[Desktop Entry]\nEncoding=UTF-8\nName=IntelliJ IDEA\nComment=IntelliJ IDEA\nExec=${BIN}/idea.sh\nIcon=${BIN}/idea.png\nTerminal=false\nStartupNotify=true\nType=Application" > ${DESK}
+# # Create symlink entry
+# sudo ln -s ${BIN}/idea.sh /usr/local/bin/idea
 
   
-echo "IntelliJ [DESKTOP LINK]"
-echo "Done."  
-echo "IntelliJ [FINISHED]"
+# echo "IntelliJ [DESKTOP LINK]"
+# echo "Done."  
+# echo "IntelliJ [FINISHED]"
 
 
 
 
 
-# Install TITLE
-#LINK
-echo "NAME [INSTALLING]"
+# # Install TITLE
+# #LINK
+# echo "NAME [INSTALLING]"
 echo "NAME [FINISHED]"
 
 
 
 
+
+
+
+
+
+
+# Install java
+# http://tipsonubuntu.com/2016/07/31/install-oracle-java-8-9-ubuntu-16-04-linux-mint-18/
+echo "java [INSTALLING]"
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt update
+# sudo apt install oracle-java9-installer
+# javac -version
+# sudo apt install oracle-java9-set-default
+
+echo "java [FINISHED]"
