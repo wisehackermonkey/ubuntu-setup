@@ -3,6 +3,7 @@
 # 171216
 # 171217
 # 171218
+# 171219
 # schema
 
 # Install TITLE
@@ -16,7 +17,7 @@ echo "NAME [FINISHED]"
 #todo
 # - ranger
 #update system
-#sudo apt-get update
+sudo apt-get update
 cd ~/
 
 #Install sublime text
@@ -171,6 +172,10 @@ echo "Arduino [INSTALLING]"
 # sudo bash /opt/arduino/install.sh
 # sudo rm ~/Downloads/arduino*.tar.xz
 
+# FIX Permissions issues
+# https://arduino.stackexchange.com/questions/21215/first-time-set-up-permission-denied-to-usb-port-ubuntu-14-04
+# sudo usermod -a -G dialout $USER
+# sudo chmod a+rw /dev/ttyACM0
 echo "Arduino [FINISHED]"
 
 
@@ -252,17 +257,6 @@ echo "Git [INSTALLING]"
 
 
 
-# # Install TITLE
-# #LINK
-# echo "NAME [INSTALLING]"
-echo "NAME [FINISHED]"
-
-
-
-
-
-
-
 
 
 
@@ -276,3 +270,41 @@ echo "java [INSTALLING]"
 # sudo apt install oracle-java9-set-default
 
 echo "java [FINISHED]"
+
+
+
+
+# Install Nodejs
+# https://nodejs.org/en/download/package-manager/
+echo "Node.js [INSTALLING]"
+# cd ~/Downloads
+# sudo curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+# sudo apt-get install nodejs -y
+echo "Node.js [VERSION]"
+# node --version
+echo "Node.js [FINISHED]"
+
+
+# Nodejs update npm
+# https://docs.npmjs.com/getting-started/installing-node
+
+echo "Npm [UPDATE]"
+# sudo npm install npm@latest -g
+echo "Npm [VERSION]"
+# npm --version
+echo "Npm [FINISHED]"
+
+
+
+
+
+
+# Install Yarn
+# https://yarnpkg.com/en/docs/install
+echo "Yarn [INSTALLING]"
+echo "todo"
+echo "Yarn [FINISHED]"
+
+
+
+
