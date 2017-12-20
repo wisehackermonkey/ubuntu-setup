@@ -9,6 +9,7 @@
 # Install TITLE
 #LINK
 echo "NAME [INSTALLING]"
+cd ~/Downloads
 echo "NAME [FINISHED]"
 
 
@@ -280,6 +281,7 @@ echo "Node.js [INSTALLING]"
 # cd ~/Downloads
 # sudo curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
 # sudo apt-get install nodejs -y
+# sudo apt-get install build-essential -y
 echo "Node.js [VERSION]"
 # node --version
 echo "Node.js [FINISHED]"
@@ -302,7 +304,11 @@ echo "Npm [FINISHED]"
 # Install Yarn
 # https://yarnpkg.com/en/docs/install
 echo "Yarn [INSTALLING]"
-echo "todo"
+cd ~/Downloads
+# curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+# printf "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+sudo apt-get update
+sudo apt-get install yarn -y
 echo "Yarn [FINISHED]"
 
 
