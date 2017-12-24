@@ -4,6 +4,7 @@
 # 171217
 # 171218
 # 171219
+# 171223
 # schema
 
 # Install TITLE
@@ -17,6 +18,9 @@ echo "NAME [FINISHED]"
 
 #todo
 # - ranger
+# 171223
+# tmux
+
 #update system
 sudo apt-get update
 cd ~/
@@ -310,6 +314,20 @@ echo "Yarn [INSTALLING]"
 # sudo apt-get update
 # sudo apt-get install yarn -y
 echo "Yarn [FINISHED]"
+
+
+
+
+
+# Install Spotify
+# https://www.spotify.com/us/download/linux/
+# note:  launching from terminal works with
+# > spotify
+echo "Spotify [INSTALLING]"
+# cd ~/Downloads
+# sudo snap install spotify
+echo "Spotify [FINISHED]"
+
 
 
 
