@@ -332,3 +332,18 @@ echo "Spotify [FINISHED]"
 
 
 
+
+
+
+
+
+# Install WebStorm
+# https://snapcraft.io/webstorm/
+echo "WebStorm [INSTALLING]"
+cd ~/Downloads
+sudo snap install webstorm --classic
+echo "WebStorm [FINISHED]"
+
+
+
+
