@@ -5,6 +5,8 @@
 # 171218
 # 171219
 # 171223
+# 171226
+
 # schema
 
 # Install TITLE
@@ -17,7 +19,6 @@ echo "NAME [FINISHED]"
 
 
 #todo
-# - ranger
 # 171223
 # tmux
 
@@ -351,11 +352,34 @@ echo "WebStorm [FINISHED]"
 # # https://raw.githubusercontent.com/milq/milq/master/scripts/bash/install-opencv.sh
 # https://milq.github.io/install-opencv-ubuntu-debian/
 echo "opencv [INSTALLING]"
-cd ~/Downloads
-sudo apt-get install libopencv-dev python-opencv
-sudo bash install_opencv.sh
-cd ~/Downloads
+# sudo apt-get install libopencv-dev python-opencv
+# sudo bash install_opencv.sh
 echo "opencv [FINISHED]"
+
+
+
+
+
+
+
+# Install Http server
+# https://github.com/processing/p5.js/wiki/Local-server
+echo " Http server [INSTALLING]"
+# cd ~/Downloads
+# sudo npm install -g http-server
+echo " Http server [FINISHED]"
+
+
+
+
+
+
+# Install ranger
+#LINK
+echo "ranger [INSTALLING]"
+sudo apt-get install ranger
+
+echo "ranger [FINISHED]"
 
 
 
