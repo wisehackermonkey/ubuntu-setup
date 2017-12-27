@@ -347,3 +347,16 @@ echo "WebStorm [FINISHED]"
 
 
 
+# Install opencv
+# # https://raw.githubusercontent.com/milq/milq/master/scripts/bash/install-opencv.sh
+# https://milq.github.io/install-opencv-ubuntu-debian/
+echo "opencv [INSTALLING]"
+cd ~/Downloads
+sudo apt-get install libopencv-dev python-opencv
+sudo bash install_opencv.sh
+cd ~/Downloads
+echo "opencv [FINISHED]"
+
+
+
+
