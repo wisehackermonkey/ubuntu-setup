@@ -6,7 +6,7 @@
 # 171219
 # 171223
 # 171226
-
+# 171228
 # schema
 
 # Install TITLE
@@ -377,9 +377,24 @@ echo " Http server [FINISHED]"
 # Install ranger
 #LINK
 echo "ranger [INSTALLING]"
-sudo apt-get install ranger
-
+# sudo apt-get install ranger
 echo "ranger [FINISHED]"
+
+
+# Install Pycharm
+# https://itsfoss.com/install-pycharm-ubuntu/
+# Uninstall umake -r ide pycharm
+echo "Pycharm [INSTALLING]"
+# cd ~/Downloads
+# sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+# sudo apt-get update
+# sudo apt-get install ubuntu-make
+# sudo umake ide pycharm
+echo "Pycharm [FINISHED]"
+
+
+
+
 
 
 
