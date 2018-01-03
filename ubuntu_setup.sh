@@ -7,6 +7,8 @@
 # 171223
 # 171226
 # 171228
+# 180102
+
 # schema
 
 # Install TITLE
@@ -384,6 +386,7 @@ echo "ranger [FINISHED]"
 # Install Pycharm
 # https://itsfoss.com/install-pycharm-ubuntu/
 # Uninstall umake -r ide pycharm
+# /usr/local/bin/charm
 echo "Pycharm [INSTALLING]"
 # cd ~/Downloads
 # sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
@@ -393,6 +396,18 @@ echo "Pycharm [INSTALLING]"
 echo "Pycharm [FINISHED]"
 
 
+
+
+
+
+
+# Install ffmpeg
+# fix lynda.com playing on chrome
+# https://askubuntu.com/questions/823835/how-to-play-videos-on-lynda-com
+echo "ffmpeg [INSTALLING]"
+# cd ~/Downloads
+# sudo apt install ffmpeg -y
+echo "ffmpeg [FINISHED]"
 
 
 
