@@ -1,5 +1,12 @@
 #!/bin/sh
 #Oran's Auto setup new ubuntu desktop script
+
+
+
+
+# NOTES -------------------
+# dpkg 
+# https://askubuntu.com/questions/40779/how-do-i-install-a-deb-file-via-the-command-line#40781
 # date last edit
 # 171216
 # 171217
@@ -420,8 +427,6 @@ echo "insync [INSTALLING]"
 cd ~/Downloads
 sudo wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.22.36179-xenial_amd64.deb
 sudo dpkg -i insync_1.3.22.36179-xenial_amd64.deb
-
-
 sudo rm -r ~/Downloads/insync_1.3.22.36179-xenial_amd64.deb
 
 echo "insync [FINISHED]"
