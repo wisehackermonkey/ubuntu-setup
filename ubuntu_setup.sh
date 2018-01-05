@@ -1,3 +1,4 @@
+#!/bin/sh
 #Oran's Auto setup new ubuntu desktop script
 # date last edit
 # 171216
@@ -8,6 +9,7 @@
 # 171226
 # 171228
 # 180102
+# 180104
 
 # schema
 
@@ -408,6 +410,26 @@ echo "ffmpeg [INSTALLING]"
 # cd ~/Downloads
 # sudo apt install ffmpeg -y
 echo "ffmpeg [FINISHED]"
+
+
+
+
+# Install insync 
+#https://www.insynchq.com/downloads?start=true
+echo "insync [INSTALLING]"
+cd ~/Downloads
+sudo wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.22.36179-xenial_amd64.deb
+sudo dpkg -i insync_1.3.22.36179-xenial_amd64.deb
+
+
+sudo rm -r ~/Downloads/insync_1.3.22.36179-xenial_amd64.deb
+
+echo "insync [FINISHED]"
+
+
+
+
+
 
 
 
