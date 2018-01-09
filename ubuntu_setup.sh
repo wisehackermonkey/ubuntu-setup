@@ -17,6 +17,7 @@
 # 171228
 # 180102
 # 180104
+# 180108
 
 # schema
 
@@ -424,10 +425,10 @@ echo "ffmpeg [FINISHED]"
 # Install insync 
 #https://www.insynchq.com/downloads?start=true
 echo "insync [INSTALLING]"
-cd ~/Downloads
-sudo wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.22.36179-xenial_amd64.deb
-sudo dpkg -i insync_1.3.22.36179-xenial_amd64.deb
-sudo rm -r ~/Downloads/insync_1.3.22.36179-xenial_amd64.deb
+# cd ~/Downloads
+# sudo wget https://d2t3ff60b2tol4.cloudfront.net/builds/insync_1.3.22.36179-xenial_amd64.deb
+# sudo dpkg -i insync_1.3.22.36179-xenial_amd64.deb
+# sudo rm -r ~/Downloads/insync_1.3.22.36179-xenial_amd64.deb
 
 echo "insync [FINISHED]"
 
@@ -435,9 +436,9 @@ echo "insync [FINISHED]"
 
 
 
-
-
-
-
-
-
+# Install gtkterm (serial console)
+#LINK
+echo "gtkterm [INSTALLING]"
+cd ~/Downloads
+sudo apt-get install gtkterm
+echo "gtkterm [FINISHED]"
